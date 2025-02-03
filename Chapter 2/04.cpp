@@ -17,4 +17,3 @@ cout << "Всё ходит по цепи кругом" << line;
 
 system("pause"); return 0;
 }
-

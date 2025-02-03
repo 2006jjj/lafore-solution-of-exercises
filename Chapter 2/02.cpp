@@ -5,7 +5,6 @@
 //1992  11300
 //1993  16200
 
-#include <io.h>
 #include <iostream>
 #include <iomanip>
 using namespace std;

@@ -1,0 +1,40 @@
+struct Candle
+{
+public:
+	double open, high, low, close;
+	Candle() = default;
+	Candle(double o, double h, double l, double c) : open(o), high(h), low(l), close(c) {}
+
+
+	bool body_contains(const double& price) const noexcept
+	{
+		if (is_green())
+		{
+			const double& max = close;
+			const double& min = open;
+			return price >= min && price <= max;
+		}
+		else
+		{
+			const double &max = open;
+			const double &min = close;
+			return price >= min && price <= max;
+		}
+	}
+
+	bool contains(const double& price) const noexcept 
+	{ 
+		return price >= low && price <= high; 
+	}
+	double full_size() const noexcept 
+	{ 
+		return abs(low - high); 
+	}
+	double body_size() const noexcept 
+	{ 
+		return abs(open - close); 
+	}
+	bool is_green() const noexcept { return close > open; }
+	bool is_red() const noexcept { return close < open; }
+
+};

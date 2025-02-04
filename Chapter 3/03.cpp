@@ -14,7 +14,7 @@ int main()
 {setlocale(LC_ALL, ".1251"); system("color 0F"); srand(time(NULL));
 
 	long x=0; 
-  char ch;
+  	char ch;
 	cout << "Введите число:";
 	while ((ch = getche()) != '\r')
 	x = x * 10 + ch - 48;

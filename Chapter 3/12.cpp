@@ -18,18 +18,18 @@ int main()
 int a, b, c, d; 
 char c1, ch;
 do {
-	cout << "Введите первый операнд:"; cin >> a >> c1 >> b;
-	cout << "Введите знак операции:";  cin >> ch;
-	cout << "Введите второй операнд:"; cin >> c >> c1 >> d;
-	switch (ch) 
+cout << "Введите первый операнд:"; cin >> a >> c1 >> b;
+cout << "Введите знак операции:";  cin >> ch;
+cout << "Введите второй операнд:"; cin >> c >> c1 >> d;
+switch (ch) 
   {
 	case '+': cout << "Сложение: " << a << c1 << b << ch << c << c1 << d << "=" << (a * d + b * c) << c1 << b * d;  break;
 	case '-': cout << "Вычитание: " << a << c1 << b << ch << c << c1 << d << "=" << (a * d - b * c) << c1 << b * d; break;
 	case '*': cout << "Умножение: " << a << c1 << b << ch << c << c1 << d << "=" << a * c << c1 << b * d;       break;
 	case '/': cout << "Деление: " << a << c1 << b << ch << c << c1 << d << "=" << a * d << c1 << b * c;         break;
-	}
-	cout << "\nЖелаете продолжить? (y/n):";
-	cin >> ch;
+  }
+cout << "\nЖелаете продолжить? (y/n):";
+cin >> ch;
 } while (ch != 'n'); 
  
 system("pause"); return 0;

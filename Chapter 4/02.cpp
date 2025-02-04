@@ -12,14 +12,14 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{setlocale(LC_ALL, ".1251"); system("color 0F"); srand(time(NULL));
-
 struct point 
 { 
  int x, y;
 };
- 
+
+int main()
+{setlocale(LC_ALL, ".1251"); system("color 0F"); srand(time(NULL));
+
 point p1, p2, p3;
 cout << "Введите координаты точки p1: ";
 cin >> p1.x >> p1.y;

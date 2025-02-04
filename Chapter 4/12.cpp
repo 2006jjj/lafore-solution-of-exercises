@@ -16,14 +16,14 @@ int main()
 fraction m, n; 
 char c1, ch;
 do {
-	cout << "Введите первую дробь:"; 
-  cin >> m.ch >> c1 >> m.zn;
-	cout << "Введите знак операции:";  
-  cin >> ch;
-	cout << "Введите вторую дробь:"; 
-  cin >> n.ch >> c1 >> n.zn;
+cout << "Введите первую дробь:"; 
+cin >> m.ch >> c1 >> m.zn;
+cout << "Введите знак операции:";  
+cin >> ch;
+cout << "Введите вторую дробь:"; 
+cin >> n.ch >> c1 >> n.zn;
 	switch (ch) 
-  {
+ 	 {
 	case '+': cout << "Сложение: " << m.ch << c1 << m.zn << ch << n.ch << c1 << n.zn << "=" << (m.ch * n.zn + m.zn * n.ch) << c1 << m.zn * n.zn;  break;
 	case '-': cout << "Вычитание: " << m.ch << c1 << m.zn << ch << n.ch << c1 << n.zn << "=" << (m.ch * n.zn - m.zn * n.ch) << c1 << m.zn * n.zn; break;
 	case '*': cout << "Умножение: " << m.ch << c1 << m.zn << ch << n.ch << c1 << n.zn << "=" << m.ch * n.ch << c1 << m.zn * n.zn;       break;

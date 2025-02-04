@@ -17,26 +17,26 @@ int main()
   char c; 
   int f1=0, f2=0, sh1=0, sh2=0, p1=0, p2=0;
 do
+{
+	cout << "Введите первую сумму: J";
+	cin >> f1>>c>>sh1>>c>>p1;
+	cout << "Введите вторую сумму: J";
+	cin >> f2 >> c >> sh2 >> c >> p2;
+	f1 += f2; sh1+= sh2; p1 += p2;
+	while (p1 > 11) 
 	{
-		cout << "Введите первую сумму: J";
-		cin >> f1>>c>>sh1>>c>>p1;
-		cout << "Введите вторую сумму: J";
-		cin >> f2 >> c >> sh2 >> c >> p2;
-		f1 += f2; sh1+= sh2; p1 += p2;
-		while (p1 > 11) 
-		{
-			++sh1;
-			p1 -= 12; 
-		}
-		while (sh1 > 19) 
-		{
-			++f1;
-			sh1 -= 20; 
-		}
-		cout << "Всего: J"<< f1<<c<<sh1<<c<<p1;
-		cout << "\nПродолжить(y/n)? " << endl;
-		cin >> c;
-	} while (c != 'n');
+		++sh1;
+		p1 -= 12; 
+	}
+	while (sh1 > 19) 
+	{
+		++f1;
+		sh1 -= 20; 
+	}
+	cout << "Всего: J"<< f1<<c<<sh1<<c<<p1;
+	cout << "\nПродолжить(y/n)? " << endl;
+	cin >> c;
+} while (c != 'n');
 
 system("pause"); return 0;
 }

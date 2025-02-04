@@ -23,24 +23,24 @@ cout << "Введите первую букву должности (laborer, sec
 cin >> ch;
 cout << "Полное название должности: ";
 		switch (ch) 
-    {
+ 		  	 {
 			case 'l': x = laborer; break;
 			case 's': x = secretary; break;
 			case 'm': x = manager; break;
 			case 'a': x = accountant; break;
 			case 'e': x = executive; break;
 			case 'r': x = researcher; break; 
-    }
+  			  }
 
 		switch (x) 
-    {
+   			 {
 			case laborer: cout << "laborer"; break;
 			case secretary: cout << "secretary"; break;
 			case manager: cout << "manager"; break;
 			case accountant: cout << "accountant"; break;
 			case executive: cout << "executive"; break;
 			case researcher: cout << "researcher"; break; 
-    }
+   			 }
 cout<<endl;
 system("pause"); return 0;
 }

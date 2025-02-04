@@ -14,9 +14,9 @@ using namespace std;
 int main()
 {setlocale(LC_ALL, ".1251"); system("color 0F"); srand(time(NULL));
 	
-	char c; 
+  char c; 
   int f1=0, f2=0, sh1=0, sh2=0, p1=0, p2=0;
-	do
+do
 	{
 		cout << "Введите первую сумму: J";
 		cin >> f1>>c>>sh1>>c>>p1;

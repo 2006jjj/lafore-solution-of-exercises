@@ -22,11 +22,11 @@ struct Volume
 int main()
 {setlocale(LC_ALL, ".1251"); system("color 0F"); srand(time(NULL));
  
-Volume room = {{ 15, 6.25 }, { 25, 4.2 }, { 12, 5.8 }};
-float l = room.length.feet + room.length.inches / 12, 
-      w = room.wigth.feet + room.wigth.inches / 12,
-      h = room.height.feet + room.height.inches / 12;
-cout << "Длина комнаты: " << l << "\nШирина комнаты: " << w << "\nВысота комнаты: " << h << "\nОбъем комнаты: " << l * w * h << endl;
+    Volume room = {{ 15, 6.25 }, { 25, 4.2 }, { 12, 5.8 }};
+    float l = room.length.feet + room.length.inches / 12, 
+          w = room.wigth.feet + room.wigth.inches / 12,
+          h = room.height.feet + room.height.inches / 12;
+    cout << "Длина комнаты: " << l << "\nШирина комнаты: " << w << "\nВысота комнаты: " << h << "\nОбъем комнаты: " << l * w * h << endl;
  
 system("pause"); return 0;
 }

@@ -15,46 +15,46 @@ int main()
  cin >> c;
    switch (c)
    {
-     case '+':
-			cout << "Введите первую сумму: J";
-			cin >> f1 >> c >> sh1 >> c >> p1;
-			cout << "Введите вторую сумму: J";
-			cin >> f2 >> c >> sh2 >> c >> p2;
-			f1 += f2; sh1 += sh2; p1 += p2;
-			while (p1 > 11) 
+	case '+':
+	cout << "Введите первую сумму: J";
+	cin >> f1 >> c >> sh1 >> c >> p1;
+	cout << "Введите вторую сумму: J";
+	cin >> f2 >> c >> sh2 >> c >> p2;
+	f1 += f2; sh1 += sh2; p1 += p2;
+	while (p1 > 11) 
         {
-	  			++sh1;
-	 				p1 -= 12;
-				}
-			while (sh1 > 19) 
+	  ++sh1;
+	  p1 -= 12;
+	}
+	while (sh1 > 19) 
         {
-					++f1;
-					sh1 -= 20;
-				}
-				cout << "Всего: J" << f1 << c << sh1 << c << p1 << endl;
-				break;
-
-			case '-':
-				cout << "Введите первую сумму: J";
-				cin >> f1 >> c >> sh1 >> c >> p1;
-				cout << "Введите вторую сумму: J";
-				cin >> f2 >> c >> sh2 >> c >> p2;
-				f1 -= f2; sh1 -= sh2; p1 -= p2;
-				while (p1 < 0) 
+	  ++f1;
+	  sh1 -= 20;
+	}
+	cout << "Всего: J" << f1 << c << sh1 << c << p1 << endl;
+	break;
+	   
+	case '-':
+	cout << "Введите первую сумму: J";
+	cin >> f1 >> c >> sh1 >> c >> p1;
+	cout << "Введите вторую сумму: J";
+	cin >> f2 >> c >> sh2 >> c >> p2;
+	f1 -= f2; sh1 -= sh2; p1 -= p2;
+	while (p1 < 0) 
         {
-					--sh1;
-					p1 -= 12;
+	  --sh1;
+	  p1 -= 12;
         }
-				while (sh1 > 19) 
+	while (sh1 > 19) 
         {
-					++f1;
-					sh1 -= 20;
+	  ++f1;
+	  sh1 -= 20;
         }
-				cout << "Всего: J" << f1 << c << sh1 << c << p1 << endl ;
-				break;
-			case '*':
-				break;
-			default: cout << "Error!";
+	cout << "Всего: J" << f1 << c << sh1 << c << p1 << endl ;
+	break;
+	   
+	case '*': break;
+	default: cout << "Error!";
    }
 system("pause"); return 0;
 }

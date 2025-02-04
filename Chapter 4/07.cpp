@@ -35,7 +35,7 @@ cin >> s1.number >> s1.salary >> s >> s1.data.day >> ch >> s1.data.mounth >> ch 
     case 'e': s1.dolzhnost = executive; break;
     case 'r': s1.dolzhnost = researcher; break;
   }
-cout << "Первый сотрудник:\n" << "Номер:" << s1.number << "\nЗарплата:" << s1.salary << "$\n" << "Должность:";
+cout << "Первый сотрудник:\n" << "Номер:" << s1.number << "\nЗарплата:" << s1.salary << "$\n" << "Должность:" << endl;
   switch (s1.dolzhnost) 
   {
     case laborer: cout << "laborer"; break;

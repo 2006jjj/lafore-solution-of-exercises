@@ -14,8 +14,10 @@ int main()
 {setlocale(LC_ALL, ".1251"); system("color 0F"); srand(time(NULL));
 
   int x=0, y=0,res=1;
-  cout << "Введите количество мест:"; cin >> x;
-  cout << "Введите количество гостей:"; cin >> y;
+  cout << "Введите количество мест:"; 
+  cin >> x;
+  cout << "Введите количество гостей:"; 
+  cin >> y;
   if (y >= x)
   {
   	for (int i = x; i >= 1; i--)

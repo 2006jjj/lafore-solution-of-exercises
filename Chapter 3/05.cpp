@@ -14,12 +14,12 @@ using namespace std;
 int main()
 {setlocale(LC_ALL, ".1251"); system("color 0F"); srand(time(NULL));
 
-		int n = 20;
-		for (int i = 0; i < n; i++) 
+ int n = 20;
+ for (int i = 0; i < n; i++) 
     {
-			for (int j = 0; j < 2*n-1; j++)
-				cout << ((j > n - 2 - i && j < n + i) ? "x" : " ");
-			cout << endl; 
+	for (int j = 0; j < 2*n-1; j++)
+	 cout << ((j > n - 2 - i && j < n + i) ? "x" : " ");
+	cout << endl; 
     }		
 system("pause"); return 0;
 }

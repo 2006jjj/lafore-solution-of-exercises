@@ -17,7 +17,6 @@ enum etype { laborer, secretary, manager, accountant, executive, researcher };
 
 int main()
 {setlocale(LC_ALL, ".1251"); system("color 0F"); srand(time(NULL));
-
 etype x; 
 char ch;
 cout << "Введите первую букву должности (laborer, secretary, manager, accountant, executive, researcher): "; 

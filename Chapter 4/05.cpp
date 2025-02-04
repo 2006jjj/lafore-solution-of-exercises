@@ -13,11 +13,11 @@ struct date
 int main()
 {setlocale(LC_ALL, ".1251"); system("color 0F"); srand(time(NULL));
  
-date data; 
-char ch;
-cout << "Введите дату: "; 
-cin >> data.day >> ch >> data.mounth >> ch >> data.year;
-cout << "\nВы ввели дату:" << data.day << ch << data.mounth << ch << data.year << endl;
+	date data; 
+	char ch;
+	cout << "Введите дату: "; 
+	cin >> data.day >> ch >> data.mounth >> ch >> data.year;
+	cout << "\nВы ввели дату:" << data.day << ch << data.mounth << ch << data.year << endl;
 	
 system("pause"); return 0;
 }

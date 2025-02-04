@@ -15,7 +15,7 @@ int main()
 {setlocale(LC_ALL, ".1251"); system("color 0F"); srand(time(NULL));
  
 	int y=0; 
-  float s=0.0, v=0.0;
+  	float s=0.0, v=0.0;
 	cout << "Введите начальный вклад: "; cin >> v;
 	cout << "Введите число лет: "; cin >> y;
 	cout << "Введите процентную ставку: "; cin >> s;

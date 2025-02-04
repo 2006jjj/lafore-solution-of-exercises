@@ -19,7 +19,7 @@ int main()
 time1 t;
 cout << "Введите часы, минуты, секунды: "; 
 cin >> t.hours >> t.minutes >> t.seconds;
-cout << "Общее время в секундах:" << t.hours * 3600 + t.minutes * 60 + t.seconds<<endl;;
+cout << "Общее время в секундах:" << t.hours * 3600 + t.minutes * 60 + t.seconds<<endl;
  
 system("pause"); return 0;
 }

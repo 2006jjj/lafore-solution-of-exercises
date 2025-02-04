@@ -15,23 +15,23 @@ using namespace std;
 int main()
 {setlocale(LC_ALL, ".1251"); system("color 0F"); srand(time(NULL));
 
-	float a, b;
-	char c, ch;
-	do
+float a, b;
+char c, ch;
+do
+{
+	cout << "Введите первый операнд, операцию и второй операнд:";
+	cin >> a >> c >> b;
+	cout << "Результат равен ";
+	switch (c)
 	{
-		cout << "Введите первый операнд, операцию и второй операнд:";
-		cin >> a >> c >> b;
-		cout << "Результат равен ";
-		switch (c)
-		{
-		case '+': cout << a + b << endl; break;
-		case '-': cout << a - b << endl; break;
-		case '/': cout << a / b << endl; break;
-		case '*': cout << a * b << endl; break;
-		}
-		cout << "Выполнить еще одну операцию (y/n)? ";
-		cin >> ch;
-	} while (ch != 'n');
+	case '+': cout << a + b << endl; break;
+	case '-': cout << a - b << endl; break;
+	case '/': cout << a / b << endl; break;
+	case '*': cout << a * b << endl; break;
+	}
+	cout << "Выполнить еще одну операцию (y/n)? ";
+	cin >> ch;
+} while (ch != 'n');
 	
 system("pause"); return 0;
 }

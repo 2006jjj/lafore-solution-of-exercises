@@ -3,7 +3,6 @@
 Запросите с клавиатуры данных о трех сотрудниках, сохраните их в трех структурных переменных типа employee и выведите информацию о каждом из сотрудников на экран.*/
 
 #include <iostream>
-#include <iomanip> 
 using namespace std;
 
 struct employee

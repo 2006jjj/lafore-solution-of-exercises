@@ -20,7 +20,7 @@ struct phone
 int main()
 {setlocale(LC_ALL, ".1251"); system("color 0F"); srand(time(NULL));
 	
-	phone number;
+ 	phone number;
 	phone number2 = { 212, 767, 8900 };
 	cout << "Введите код города, номер станции и номер абонента:" << endl;
 	cin >> number.code >> number.stance >> number.abonent;

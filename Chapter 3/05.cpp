@@ -18,7 +18,7 @@ int main()
  for (int i = 0; i < n; i++) 
     {
 	for (int j = 0; j < 2*n-1; j++)
-	 cout << ((j > n - 2 - i && j < n + i) ? "x" : " ");
+		cout << ((j > n - 2 - i && j < n + i) ? "x" : " ");
 	cout << endl; 
     }		
 system("pause"); return 0;

@@ -17,7 +17,7 @@ int main()
 
 struct point 
 { 
- int x; int y; 
+ int x, y;
 };
  
 point p1, p2, p3;

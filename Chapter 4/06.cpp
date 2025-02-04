@@ -41,6 +41,6 @@ cout << "Полное название должности: ";
 			case executive: cout << "executive"; break;
 			case researcher: cout << "researcher"; break; 
    			 }
-cout<<endl;
+cout<<endl; 
 system("pause"); return 0;
 }

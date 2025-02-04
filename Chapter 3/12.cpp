@@ -14,7 +14,7 @@ using namespace std;
 
 int main()
 {setlocale(LC_ALL, ".1251"); system("color 0F"); srand(time(NULL));
-	
+
 int a, b, c, d; 
 char c1, ch;
 do {

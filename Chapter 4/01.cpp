@@ -12,20 +12,20 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{setlocale(LC_ALL, ".1251"); system("color 0F"); srand(time(NULL));
-	
 struct phone 
 { 
  int code, stance, abonent; 
 };
- 
-phone number;
-phone number2 = { 212, 767, 8900 };
-cout << "Введите код города, номер станции и номер абонента:" << endl;
-cin >> number.code >> number.stance >> number.abonent;
-cout << "Мой номер (" << number2.code << ") " << number2.stance << "-" << number2.abonent << endl;
-cout << "Ваш номер (" << number.code << ") " << number.stance << "-" << number.abonent << endl; 
+
+int main()
+{setlocale(LC_ALL, ".1251"); system("color 0F"); srand(time(NULL));
+	
+	phone number;
+	phone number2 = { 212, 767, 8900 };
+	cout << "Введите код города, номер станции и номер абонента:" << endl;
+	cin >> number.code >> number.stance >> number.abonent;
+	cout << "Мой номер (" << number2.code << ") " << number2.stance << "-" << number2.abonent << endl;
+	cout << "Ваш номер (" << number.code << ") " << number.stance << "-" << number.abonent << endl; 
  
 system("pause"); return 0;
 }

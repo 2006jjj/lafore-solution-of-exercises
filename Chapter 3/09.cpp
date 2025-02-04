@@ -19,7 +19,6 @@ int main()
   if (y >= x)
   {
   	for (int i = x; i >= 1; i--)
-  
   		res *= y--;
   	cout << "Число всех рассадок равно " << res << endl;
   }

@@ -23,12 +23,12 @@ cin >> ch;
 cout << "Введите вторую дробь:"; 
 cin >> n.ch >> c1 >> n.zn;
 	switch (ch) 
- 	 {
-	case '+': cout << "Сложение: " << m.ch << c1 << m.zn << ch << n.ch << c1 << n.zn << "=" << (m.ch * n.zn + m.zn * n.ch) << c1 << m.zn * n.zn;  break;
-	case '-': cout << "Вычитание: " << m.ch << c1 << m.zn << ch << n.ch << c1 << n.zn << "=" << (m.ch * n.zn - m.zn * n.ch) << c1 << m.zn * n.zn; break;
-	case '*': cout << "Умножение: " << m.ch << c1 << m.zn << ch << n.ch << c1 << n.zn << "=" << m.ch * n.ch << c1 << m.zn * n.zn;       break;
-	case '/': cout << "Деление: " << m.ch << c1 << m.zn << ch << n.ch << c1 << n.zn << "=" << m.ch * n.zn << c1 << m.zn * n.ch;         break;
-	}
+ 		{
+			case '+': cout << "Сложение: " << m.ch << c1 << m.zn << ch << n.ch << c1 << n.zn << "=" << (m.ch * n.zn + m.zn * n.ch) << c1 << m.zn * n.zn;  break;
+			case '-': cout << "Вычитание: " << m.ch << c1 << m.zn << ch << n.ch << c1 << n.zn << "=" << (m.ch * n.zn - m.zn * n.ch) << c1 << m.zn * n.zn; break;
+			case '*': cout << "Умножение: " << m.ch << c1 << m.zn << ch << n.ch << c1 << n.zn << "=" << m.ch * n.ch << c1 << m.zn * n.zn;       break;
+			case '/': cout << "Деление: " << m.ch << c1 << m.zn << ch << n.ch << c1 << n.zn << "=" << m.ch * n.zn << c1 << m.zn * n.ch;         break;
+		}
 	cout << "\nЖелаете продолжить? (y/n):";
 	cin >> ch;
 } while (ch != 'n'); 

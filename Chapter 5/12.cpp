@@ -44,31 +44,31 @@ cout << endl; system("pause"); return 0;
 fraction fadd(fraction x, fraction y) 
 {
 	fraction result; 
-  cout << "Сложение: " << x.ch << c1 << x.zn << ch << y.ch << c1 << y.zn << "=";
+ 	cout << "Сложение: " << x.ch << c1 << x.zn << ch << y.ch << c1 << y.zn << "=";
 	result.ch = x.ch * y.zn + x.zn * y.ch; result.zn = x.zn * y.zn; 
-  return result;
+  	return result;
 }
 
 fraction fsub(fraction x, fraction y) 
 {
 	fraction result; 
-  cout << "Вычитание: " << x.ch << c1 << x.zn << ch << y.ch << c1 << y.zn << "=";
+ 	cout << "Вычитание: " << x.ch << c1 << x.zn << ch << y.ch << c1 << y.zn << "=";
 	result.ch = x.ch * y.zn - x.zn * y.ch; result.zn = x.zn * y.zn; 
-  return result;
+ 	return result;
 }
 
 fraction fmul(fraction x, fraction y) 
 {
 	fraction result; 
-  cout << "Умножение: " << x.ch << c1 << x.zn << ch << y.ch << c1 << y.zn << "=";
+  	cout << "Умножение: " << x.ch << c1 << x.zn << ch << y.ch << c1 << y.zn << "=";
 	result.ch = x.ch * y.ch; result.zn = x.zn * y.zn; 
-  return result;
+  	return result;
 }
 
 fraction fdiv(fraction x, fraction y) 
 {
 	fraction result; 
-  cout << "Деление: " << x.ch << c1 << x.zn << ch << y.ch << c1 << y.zn << "=";
+  	cout << "Деление: " << x.ch << c1 << x.zn << ch << y.ch << c1 << y.zn << "=";
 	result.ch = x.ch * y.zn; result.zn = x.zn * y.ch; 
-  return result;
+  	return result;
 }

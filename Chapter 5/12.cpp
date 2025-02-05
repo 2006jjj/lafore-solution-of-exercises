@@ -22,20 +22,20 @@ int main()
 fraction m, n, res;
 do {
 	cout << "Введите первую дробь:";  
-  cin >> m.ch >> c1 >> m.zn;
+	cin >> m.ch >> c1 >> m.zn;
 	cout << "Введите знак операции:"; 
-  cin >> ch;
+	cin >> ch;
 	cout << "Введите вторую дробь:";  
-  cin >> n.ch >> c1 >> n.zn;
+ 	cin >> n.ch >> c1 >> n.zn;
 	switch (ch) 
-  {
+ 	{
 	case '+': res = fadd(m, n); cout << res.ch << c1 << res.zn; break;
 	case '-': res = fsub(m, n); cout << res.ch << c1 << res.zn; break;
 	case '*': res = fmul(m, n); cout << res.ch << c1 << res.zn; break;
 	case '/': res = fdiv(m, n); cout << res.ch << c1 << res.zn; break;
 	}
 	cout << "\nЖелаете продолжить? (y/n):"; 
-  cin >> ch;
+  	cin >> ch;
 } while (ch != 'n');
 
 cout << endl; system("pause"); return 0;

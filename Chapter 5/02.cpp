@@ -7,6 +7,7 @@
 using namespace std;
 
 double power(double, int = 2);
+
 int main()
 {setlocale(LC_ALL, ".1251"); system("color 0F"); srand(time(NULL));
  

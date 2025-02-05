@@ -27,4 +27,3 @@ double power(double n, int p)
 		result *= n;
 	return result;
 }
-

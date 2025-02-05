@@ -17,7 +17,6 @@ cout << "Введите радиус окружности:";
 cin >> rr;
 cout << circarea(rr) << endl;
 
- 
 system("pause"); return 0;
 }
 

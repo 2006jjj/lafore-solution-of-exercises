@@ -16,11 +16,11 @@ int hours=0, minutes=0, seconds=0;
 long res=0;
 do
 {
-	cout << "Введите время в формате (12:59:59):"; 
+  cout << "Введите время в формате (12:59:59):"; 
   cin >> hours >> ch >> minutes >> ch >> seconds;
-	res = hms_to_secs(hours, minutes, seconds); 
+  res = hms_to_secs(hours, minutes, seconds); 
   cout << "Result:" << res << " seconds" << endl;
-	cout << "Продолжить (y/n)? "; 
+  cout << "Продолжить (y/n)? "; 
   cin >> ch;
 } while (ch != 'n');
 

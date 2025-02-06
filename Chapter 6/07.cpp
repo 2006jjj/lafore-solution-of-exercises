@@ -19,8 +19,8 @@ private:
   float minutes; 
   char course;
 public:
-	angle() : degree(0), minutes(0.0F), course(' ') {}
-	angle(int d, float m, char c) : degree(d), minutes(m), course(c) {}
+angle() : degree(0), minutes(0.0F), course(' ') {}
+angle(int d, float m, char c) : degree(d), minutes(m), course(c) {}
 
 void putcoord() 
 {
@@ -37,20 +37,21 @@ void showcoord()
   cout << degree << '\xB0' << minutes << "'" << course << endl; 
 }
 };
+
 int main()
 {setlocale(LC_ALL, ".1251"); system("color 0F"); srand(time(NULL));
 
 char ch; 
 angle c1(179, 59.9, 'E'); 
 c1.showcoord();
-	do 
-  {
-		c1.putcoord(); 
-    cout << "Вы ввели:"; 
-    c1.showcoord();
-		cout << "Желаете продолжить? (y/n):"; 
-    cin >> ch;
-	} while (ch != 'n');
+do 
+{
+	c1.putcoord(); 
+	cout << "Вы ввели:"; 
+	c1.showcoord(); 
+	cout << "Желаете продолжить? (y/n):";  
+	cin >> ch; 
+} while (ch != 'n');
 
 cout << endl; system("pause"); return 0;
 }

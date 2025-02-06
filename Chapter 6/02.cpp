@@ -45,10 +45,8 @@ tollBoth booth1;
 cout << "Нажмите 0 для машины без оплаты," << "\nНажмите 1 для каждой оплачиваемой машины," << "\nEsc для выхода." << endl;
 do {
 ch = getche();
-if (ch == '0') 
-	booth1.nopayCar();
-if (ch == '1') 
-	booth1.payingCar();
+if (ch == '0') booth1.nopayCar();
+if (ch == '1') booth1.payingCar();
 } while (ch != ESC);
 booth1.display();
 			

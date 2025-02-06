@@ -14,8 +14,9 @@ class date
 private:
   int day, month, year;
 public: 
-	date() : day(0), month(0), year(0) {}
-	date(int y, int m, int d) : day(d), month(m), year(y) {}
+date() : day(0), month(0), year(0) {}
+date(int y, int m, int d) : day(d), month(m), year(y) {}
+
 void showdate() 
 { 
   cout << "Дата:" << day << ch << month << ch << year; 
@@ -32,23 +33,23 @@ private:
   etype x; 
   char c;
 public:
-	employee() : number(0), posobie(0.0F), c(' '), x(laborer) {}
+employee() : number(0), posobie(0.0F), c(' '), x(laborer) {}
 
 void getemploy() 
 {
-	cout << "Введите номер сотрудника и его пособие: "; 
+  cout << "Введите номер сотрудника и его пособие: "; 
   cin >> number >> posobie;
-	cout << "Введите дату в формате (xx/xx/xxxx):";
-	cin >> data.day >> ch >> data.month >> ch >> data.year;
-	if ((data.month > 12) || (data.day > 31)) 
+  cout << "Введите дату в формате (xx/xx/xxxx):";
+  cin >> data.day >> ch >> data.month >> ch >> data.year;
+if ((data.month > 12) || (data.day > 31)) 
   { 
     cout << "ERROR!";  
     exit(1); 
   }
-	cout << "Введите первую букву должности (laborer, secretary, manager, accountant, executive, researcher): "; 
+  cout << "Введите первую букву должности (laborer, secretary, manager, accountant, executive, researcher): "; 
   cin >> c;
 		switch (c) 
-    {
+		{
 		case 'l': x = laborer; break;
 		case 's': x = secretary; break;
 		case 'm': x = manager; break;
@@ -60,9 +61,9 @@ void getemploy()
 
 void putemploy() const 
 {
-	cout << "\nСотрудник № " << number << "\nПособие: " << posobie << "$" << "\nДата приема на работу: " << data.day << ch << data.month << ch << data.year << "\n" << "Должность: ";
+cout << "\nСотрудник № " << number << "\nПособие: " << posobie << "$" << "\nДата приема на работу: " << data.day << ch << data.month << ch << data.year << "\n" << "Должность: ";
 		switch (x) 
-    {
+		{
 		case laborer: cout << "Рабочий\n"; break;
 		case secretary: cout << "Секретарь\n"; break;
 		case manager: cout << "Менеджер\n"; break;

@@ -9,7 +9,7 @@ char ch = '/';
 class date 
 {
 private: 
-  int day, month, year;
+  	int day, month, year;
 public:
 	date() : day(0), month(0), year(0) {}
 	date(int y, int m, int d) : day(d), month(m), year(y) {}
@@ -17,12 +17,12 @@ void getdata()
 {
 	cout << "Введите дату в формате (xx/xx/xxxx):";
 	cin >> day >> ch >> month >> ch >> year;
-	if ((month > 12) || (day > 31)) 
+if ((month > 12) || (day > 31)) 
     { 
       cout << "ERROR!"; 
       exit(1); 
     }
-	}
+}
 void showdate() 
 { 
   cout << "Дата:" << day << ch << month << ch << year; 

@@ -12,27 +12,27 @@ class Int
 private: 
   int x;
 public:
-	Int() : x(0) {}
-	Int(int j) : x(j) {}
-	void showx() 
-    { 
+Int() : x(0) {}
+Int(int j) : x(j) {}
+void showx() 
+{ 
       cout << "Число х = " << x << endl; 
-    }
-	void sumx(Int a, Int b) 
-    { 
+}
+void sumx(Int a, Int b) 
+{ 
       x = a.x + b.x;
       cout << "Сумма равна: " << x << endl; 
-    }
+ }
 };
 
 int main()
 {setlocale(LC_ALL, ".1251"); system("color 0F"); srand(time(NULL));
 
-	Int x1(4), x2(5), x3;
-	x1.showx(); 
-  x2.showx();
-	x3.sumx(x1, x2); 
-  x3.showx();
+Int x1(4), x2(5), x3;
+x1.showx(); 
+x2.showx();
+x3.sumx(x1, x2); 
+x3.showx();
 	
 cout << endl; system("pause"); return 0;
 }

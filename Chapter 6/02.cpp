@@ -8,8 +8,6 @@
 чтобы сымитировать недобросовестного водителя. Нажатие клавиши Esc должно привести к выдаче текущих значений количества машин и выручки и завершению программы. */
 
 #include <iostream>
-// #include <conio.h> // для функции _getwche не понадобился
-#include <iomanip> // для манипулятора setprecision
 using namespace std;
 
 const char ESC = 27;

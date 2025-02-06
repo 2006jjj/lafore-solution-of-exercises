@@ -38,11 +38,11 @@ hours += t1.hours + t2.hours; minutes += t1.minutes + t2.minutes; seconds = t1.s
 int main()
 {setlocale(LC_ALL, ".1251"); system("color 0F"); srand(time(NULL));
  
-	const time1 t1(14, 43, 11), t2(3, 45, 23), t3;
-	t1.display(); 
-  t2.display();
-	t3.sumtime(t1, t2); 
-  t3.display();
+const time1 t1(14, 43, 11), t2(3, 45, 23), t3;
+t1.display(); 
+t2.display();
+t3.sumtime(t1, t2); 
+t3.display();
 
 cout << endl; system("pause"); return 0;
 }

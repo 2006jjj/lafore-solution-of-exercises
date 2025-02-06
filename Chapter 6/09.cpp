@@ -7,15 +7,14 @@
 #include <iostream>
 using namespace std;
 
-
 class fraction 
 {
 private: 
   int chislitel, znamenatel;
 public:
-	fraction() : chislitel(0), znamenatel(0) {}
-	fraction(int chi, int zn) : chislitel(chi), znamenatel(zn) {}
-	char ch;
+fraction() : chislitel(0), znamenatel(0) {}
+fraction(int chi, int zn) : chislitel(chi), znamenatel(zn) {}
+char ch;
 
 void put_znachenia() 
 { 

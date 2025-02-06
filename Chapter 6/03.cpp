@@ -21,7 +21,7 @@ void display() const
 }
 void sumtime(time1 t1, time1 t2)
 {
-	hours += t1.hours + t2.hours; minutes += t1.minutes + t2.minutes; seconds = t1.seconds + t2.seconds;
+hours += t1.hours + t2.hours; minutes += t1.minutes + t2.minutes; seconds = t1.seconds + t2.seconds;
 	if (seconds > 59) 
 	{
 		minutes++;

@@ -15,8 +15,8 @@ public:
 	date(int y, int m, int d) : day(d), month(m), year(y) {}
 void getdata()
 {
-	cout << "Введите дату в формате (xx/xx/xxxx):";
-	cin >> day >> ch >> month >> ch >> year;
+cout << "Введите дату в формате (xx/xx/xxxx):";
+cin >> day >> ch >> month >> ch >> year;
 if ((month > 12) || (day > 31)) 
     { 
       cout << "ERROR!"; 

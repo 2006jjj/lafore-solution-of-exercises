@@ -13,25 +13,25 @@ class time1
 private: 
   int hours, minutes, seconds;
 public:
-	time1() : hours(0), minutes(0), seconds(0) {}
-	time1(int h, int m, int s) : hours(h), minutes(m), seconds(s) {}
+time1() : hours(0), minutes(0), seconds(0) {}
+time1(int h, int m, int s) : hours(h), minutes(m), seconds(s) {}
 void display() const 
 { 
   cout << "Время: " << hours << ":" << minutes << ":" << seconds << endl; 
 }
 void sumtime(time1 t1, time1 t2)
 {
-		hours += t1.hours + t2.hours; minutes += t1.minutes + t2.minutes; seconds = t1.seconds + t2.seconds;
-		if (seconds > 59) 
-    { 
-      minutes++; 
-      seconds -= 60; 
-    }
-		if (minutes > 59) 
-    { 
-      hours++; 
-      minutes -= 60; 
-    }
+	hours += t1.hours + t2.hours; minutes += t1.minutes + t2.minutes; seconds = t1.seconds + t2.seconds;
+	if (seconds > 59) 
+	{
+		minutes++;
+		seconds -= 60; 
+	}
+	if (minutes > 59) 
+	{
+		hours++; 
+		minutes -= 60; 
+	}
 }
 };
 

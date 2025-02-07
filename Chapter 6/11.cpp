@@ -36,6 +36,7 @@ private:
 public:
 	Fraction() : num(0), den(0) {}
 	Fraction(int n, int d) : num(n), den(d) {}
+
 void put_fraction() 
 { 
   cin >> num >> ch >> den; 
@@ -68,34 +69,34 @@ void fdiv(Fraction a, Fraction b)
 }
 void lowterms() 
 {
-	long tnum, tden, temp, gcd;
-	tnum = labs(num); 
-  tden = labs(den);
-		if (tden == 0) 
+long tnum, tden, temp, gcd;
+tnum = labs(num); 
+tden = labs(den);
+if (tden == 0) 
     { 
       cout << "Недопустимый знаменатель!"; 
       exit(1); 
     }
-		else if (tnum == 0) 
+else if (tnum == 0) 
     { 
       num = 0; 
       den = 1; 
       return; 
     }
-		while (tnum != 0) 
-    {
-			if (tnum < tden) 
-      { 
-        temp = tnum; 
-        tnum = tden; 
-        tden = temp; 
-      }
-			tnum = tnum - tden;
-		}
-		gcd = tden; 
-		num /= gcd; 
-		den /= gcd;
-	}
+while (tnum != 0) 
+{
+	if (tnum < tden) 
+     	 { 
+      	  temp = tnum; 
+      	  tnum = tden; 
+      	  tden = temp; 
+      	 }
+tnum = tnum - tden;
+}
+gcd = tden; 
+num /= gcd; 
+den /= gcd;
+}
 };
 char Fraction::ch = '/';
 int main()
@@ -104,24 +105,24 @@ int main()
 Fraction m, n, res; char c1;
 do 
 {
-	cout << "Введите первую дробь:"; 
-  m.put_fraction();
-	cout << "Введите знак операции:"; 
-  cin >> c1;
-	cout << "Введите вторую дробь:"; 
-  n.put_fraction();
-		switch (c1) 
+cout << "Введите первую дробь:"; 
+m.put_fraction();
+cout << "Введите знак операции:"; 
+cin >> c1;
+cout << "Введите вторую дробь:"; 
+n.put_fraction();
+switch (c1) 
     {
-		case '+': res.fadd(m, n); break;
-		case '-': res.fsub(m, n); break;
-		case '*': res.fmul(m, n); break;
-		case '/': res.fdiv(m, n); break; 
+	case '+': res.fadd(m, n); break;
+	case '-': res.fsub(m, n); break;
+	case '*': res.fmul(m, n); break;
+	case '/': res.fdiv(m, n); break; 
     }
-	res.display(); 
-  res.lowterms();
-  res.display();
-	cout << "\nЖелаете продолжить? (y/n):"; 
-  cin >> c1;
+res.display(); 
+res.lowterms();
+res.display();
+cout << "\nЖелаете продолжить? (y/n):"; 
+cin >> c1;
 } while (c1 != 'n');
 
 cout << endl; system("pause"); return 0;

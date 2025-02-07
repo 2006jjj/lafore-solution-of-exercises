@@ -98,11 +98,14 @@ num /= gcd;
 den /= gcd;
 }
 };
+
 char Fraction::ch = '/';
+
 int main()
 {setlocale(LC_ALL, ".1251"); system("color 0F"); srand(time(NULL));
 
-Fraction m, n, res; char c1;
+Fraction m, n, res; 
+char c1;
 do 
 {
 cout << "Введите первую дробь:"; 

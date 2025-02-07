@@ -26,6 +26,7 @@
 Кроме перечисленных методов, вы можете включить в класс конструктор с двумя аргументами, что также будет полезно.*/
 
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 class Fraction 

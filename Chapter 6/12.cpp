@@ -21,25 +21,43 @@ class Fraction
 private:
   int num, den;
 public: 
-	  Fraction() :num(0), den(0) {}
-	  void mul_fr(Fraction f1, Fraction f2) 
-	  {
-		  num = f1.num * f2.num; den = f1.den * f2.den;
-	  }
-	  void lowterms() 
+Fraction() :num(0), den(0) {}
+void mul_fr(Fraction f1, Fraction f2) 
 {
-		  long tnum, tden, temp, gcd;
-		  tnum = labs(num);
-		  tden = labs(den);
-		  if (tden == 0) { cout << "Недопустимый знаменатель!"; exit(1); }
-		  else if (tnum == 0) { num = 0; den = 1; return; }
-		  while (tnum != 0) 
-      {
-			  if (tnum < tden) { temp = tnum; tnum = tden; tden = temp; }
-			  tnum = tnum - tden;
-		  }
-		  gcd = tden; num /= gcd; den /= gcd;
+	num = f1.num * f2.num; 
+	den = f1.den * f2.den;
+}
+
+void lowterms() 
+{ 
+	long tnum, tden, temp, gcd; 
+	tnum = labs(num); 
+	tden = labs(den); 
+	if (tden == 0) 
+	{ 
+		cout << "Недопустимый знаменатель!"; 
+		exit(1); 
+	} 
+	else if (tnum == 0) 
+	{ 
+		num = 0; 
+		den = 1; 
+		return; 
+	} 
+	while (tnum != 0)  
+	{ 
+		if (tnum < tden) 
+		{ 
+			temp = tnum; 
+			tnum = tden; 
+			tden = temp; 
+		} 
+		tnum = tnum - tden; 
 	}
+	gcd = tden; 
+	num /= gcd; 
+	den /= gcd;
+}
 
 void disp_fr()const 
 { 

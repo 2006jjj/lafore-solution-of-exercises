@@ -89,7 +89,8 @@ for (int i = 1; i < number; i++)
 		fr1.num = j; 
 		fr1.den = number; 
 		fr3.mul_fr(fr1, fr2); 
-		fr3.lowterms(); fr3.disp_fr();
+		fr3.lowterms(); 
+		fr3.disp_fr();
 	}
 	cout << endl;
 }

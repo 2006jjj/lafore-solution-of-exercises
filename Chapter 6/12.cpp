@@ -13,6 +13,7 @@
   5/6 5/36 5/18 5/12 5/9 25/36  */
 
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 int number=0;

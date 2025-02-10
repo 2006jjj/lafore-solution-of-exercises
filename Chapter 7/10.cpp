@@ -15,7 +15,7 @@ class matrix
 private:
 	static const int limit = 10;
 	int array[10][10]{}; 
-  int n, m;
+  	int n, m;
 public:
 matrix() {};
 matrix(int a, int b) : n(a), m(b) {};
@@ -76,7 +76,8 @@ m1.zapolnenie(5, 5);
 m2.display(3, 3);
 int temp = 12345;
 m3.putel(7, 4, temp);
-temp = m3.getel(7, 4); cout << temp << endl;
+temp = m3.getel(7, 4); 
+cout << temp << endl;
 
 cout << endl; system("pause"); return 0;
 }

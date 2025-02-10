@@ -23,7 +23,7 @@ private:
 	int st[MAX]{};
 	int head, tail;
 public:
-	Queue() 
+Queue() 
 { 
   head = 0; 
   tail = -1; 

@@ -20,6 +20,7 @@ private:
 public:
 	Distance() : feet(0), inches(0) {}
 	Distance(int ft, float inc) : feet(ft), inches(inc) {}
+
 void getdist()
 {
   cout << "\nВведите футы:"; cin >> feet;

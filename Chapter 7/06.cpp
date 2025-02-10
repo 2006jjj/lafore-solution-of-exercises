@@ -17,7 +17,7 @@ class card
 {
 private:
 	int number; 
-  Suit suit;
+  	Suit suit;
 public:
 card() {}
 void set(int n, Suit s) 

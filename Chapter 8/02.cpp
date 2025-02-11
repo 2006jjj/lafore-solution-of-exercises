@@ -6,7 +6,6 @@
 результат для других вычислений, например в выражениях типа
   s3=s1+=s2;*/
 
-
 #include <iostream>
 #include <string.h>
 #include <stdlib.h>

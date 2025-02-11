@@ -8,11 +8,11 @@ using namespace std;
 class Distance 
 {
 private:
-	int feet; 
+  int feet; 
   float inches;
 public:
-	Distance() : feet(0), inches(0.0) {}
-	Distance(int f, float in) : feet(f), inches(in) {}
+Distance() : feet(0), inches(0.0) {}
+Distance(int f, float in) : feet(f), inches(in) {}
 void getdist() 
 { 
   cout << "Введите футы:"; 

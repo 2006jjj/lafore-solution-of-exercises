@@ -75,23 +75,23 @@ Fraction m, n, res;
 char c1;
 do 
 {
-	cout << "Введите первую дробь:"; 
+  cout << "Введите первую дробь:"; 
   m.put_fraction();
-	cout << "Введите знак операции:"; 
+  cout << "Введите знак операции:"; 
   cin >> c1;
-	cout << "Введите вторую дробь:";  
+  cout << "Введите вторую дробь:";  
   n.put_fraction();
-	switch (c1) 
+  switch (c1) 
   {
 	case '+': res = m + n; break;
 	case '-': res = m - n; break;
 	case '*': res = m * n; break;
 	case '/': res = m / n; break;
-	}
-	res.display(); 
+  }
+  res.display(); 
   res.lowterms(); 
   res.display();
-	cout << "\nЖелаете продолжить? (y/n):"; 
+  cout << "\nЖелаете продолжить? (y/n):"; 
   cin >> c1;
 } while (c1 != 'n'); 
 

@@ -14,7 +14,8 @@ class publication
 private: 
   string name; 
   float price;
-public: publication() : name(""), price(0.0F) {}
+public: 
+publication() : name(""), price(0.0F) {}
 void getdata() 
 { 
   cout << "Введите название книги:"; 

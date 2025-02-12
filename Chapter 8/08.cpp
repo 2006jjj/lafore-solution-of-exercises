@@ -99,15 +99,15 @@ int main()
 money m1, m2, m3; 
 long double x = 0.0;
 do {
-	m1.puts(); 
+  m1.puts(); 
   m2.puts();
-	cout << "Введите число с плавающей точкой:"; 
+  cout << "Введите число с плавающей точкой:"; 
   cin >> x;
-	cout << "\n1: "; 
+  cout << "\n1: "; 
   m1.displayld(); 
   cout << "\n2: "; 
   m2.displayld();
-	cout << "\n1)"; 
+  cout << "\n1)"; 
   m3 = m1 + m2; 
   cout << "2)"; 
   m3 = m1 - m2;
@@ -117,7 +117,7 @@ do {
   x = m1 / m2; 
   cout << "5)"; 
   m3 = m3 / x;
-	cout << "\nЖелаете продолжить? Введите (y/n):"; 
+  cout << "\nЖелаете продолжить? Введите (y/n):"; 
   cin.get();
 } while (cin.get() != 'n'); 
 

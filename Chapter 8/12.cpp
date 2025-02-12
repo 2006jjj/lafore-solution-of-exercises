@@ -15,7 +15,7 @@ class money;
 class Sterling
 {
 private:
-	long pounds; 
+  long pounds; 
   int shillings, pence;
 public:
 Sterling() : pounds(0), shillings(0), pence(0) {};
@@ -76,30 +76,31 @@ int main()
 long double number = 0.0; 
 unsigned short sw = 0;
 do {
-  cout << "\nВЫБЕРИТЕ ПУНКТ:" << "\n1.Введите сумму в $ (50.00)" << "\n2.Введите сумму в футах, шилингах и пенсах (J9.19.11)" << "\n3.Выход\n" << endl; cin >> sw;
-  switch (sw) 
+  cout << "\nВЫБЕРИТЕ ПУНКТ:" << "\n1.Введите сумму в $ (50.00)" << "\n2.Введите сумму в футах, шилингах и пенсах (J9.19.11)" << "\n3.Выход\n" << endl; 
+  cin >> sw;
+  switch (sw)  
   {
-	case 1: 
-    {
-		cout << "Ваша сумма:\n$"; 
-    cin >> number;
-		money x(number); 
-    Sterling s(x); 
-    break; 
-    }
-	case 2: 
-    {
-		Sterling s; 
-    s.getSterling();
-		money x(s); 
-    break; 
-    }
-	case 3: 
-    { 
-      cout << "\nВсего хорошего!";
-      break; 
-    }
-	}
+	  case 1: 
+		  {
+			  cout << "Ваша сумма:\n$";  
+			  cin >> number;
+			  money x(number); 
+			  Sterling s(x); 
+			  break; 
+		  }
+	  case 2:  
+		  {
+			  Sterling s; 
+			  s.getSterling();
+			  money x(s);  
+			  break; 
+		  }
+	  case 3: 
+		  { 
+			  cout << "\nВсего хорошего!";
+			  break; 
+		  }
+  }
 } while (sw <= 2); 
 
 cout << endl; system("pause"); return 0;

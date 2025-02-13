@@ -9,7 +9,7 @@ int main()
 {setlocale(LC_ALL, ".1251"); system("color 0F"); srand(time(NULL));
 
 const int MAX = 10;
-float arr[MAX], average, sum = 0.0; 
+float arr[MAX], average=0.0, sum = 0.0; 
 int num = 0; 
 char ch;
 cout << "Введите числа которые будут помещены в массив:";

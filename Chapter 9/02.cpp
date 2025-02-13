@@ -58,7 +58,8 @@ Pstring(const char s[])
     }
     str[SZ - 1] = '\0';
   }
-  else String(s);
+  else 
+    String(s);
 }
 };
 

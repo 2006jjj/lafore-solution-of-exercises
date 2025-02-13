@@ -29,8 +29,8 @@ void putdata() const
 class disk : private publication 
 {
 private: 
-	enum edisk { CD, DVD, _ERROR }; 
-	char ch = '\0'; 
+  enum edisk { CD, DVD, _ERROR }; 
+  char ch = '\0'; 
   edisk tdisk = _ERROR;
 public: 
 void getdata() 

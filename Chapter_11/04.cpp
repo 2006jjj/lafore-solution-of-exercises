@@ -47,7 +47,7 @@
 
 
 #include <iostream>
-#include <string> // для работы со строками wstring
+#include <string>
 using namespace std;
 
 class Array 

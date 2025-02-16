@@ -91,6 +91,7 @@ Array& operator=(Array& arr)
   return *this;
 }
 };
+
 int main()
 {setlocale(LC_ALL, ".1251"); system("color 0F"); srand(time(NULL));
 

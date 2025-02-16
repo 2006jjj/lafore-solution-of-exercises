@@ -94,5 +94,6 @@ do
  
 for (int j = 0; j < n; j++) 
   ptrpub[j]->putdata(); 
+ 
 cout << endl; system("pause"); return 0;
 }

@@ -62,7 +62,11 @@ Array(int s)
   size = s; 
   ptr = new int[s];
 }
-~Array() { delete[] ptr; }
+~Array() 
+{ 
+	delete[] ptr; 
+	cout << "element udalen\n";
+}
 Array(Array& arr) 
 {
   size = arr.size;

@@ -9,7 +9,7 @@ using namespace std;
 class Distance
 {
 private:
-	int feet; 
+  int feet; 
   float inches;
 public:
 Distance() : feet(0), inches(0) {}

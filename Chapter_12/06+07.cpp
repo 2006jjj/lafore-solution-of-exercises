@@ -44,7 +44,6 @@ void showData()
   cout << "\nФамилия, имя и отчество: " << surname << " " << name << " " << otc << endl;
 }
 static void diskOpen();
-static void diskReset();
 void diskOut();
 void diskIn(int n);
 static int diskCount();

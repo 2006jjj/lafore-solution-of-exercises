@@ -3,6 +3,10 @@
     C:\filesize program.ext.*/
 
 
+#include <fstream>   
+#include <iostream>
+using namespace std;
+
 int main(int argc, char* argv[])
 {setlocale(LC_ALL, ".1251"); system("color 0F"); srand(time(NULL));
 

@@ -5,7 +5,6 @@
 #include <iostream>
 using namespace std;
 
-
 template<class F>
 F amax(F* array, const unsigned int size)
 {
@@ -25,7 +24,8 @@ int main()
 
 const unsigned int SZ = 5;
 int intA[SZ] = { 6,22,3,4,5 };
-amax(intA, SZ); cout << endl;
+amax(intA, SZ); 
+cout << endl;
  
 float floatA[SZ] = { 4.54, 7.54, 88.88, 23.33, 1.23 };
 amax(floatA, SZ); 

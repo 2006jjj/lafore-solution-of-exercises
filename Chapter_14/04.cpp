@@ -9,9 +9,9 @@ template <class S>
 void swaps(S& a, S& b)
 {
 	S temp;
-	temp = a; 
-  a = b;
-  b = temp;
+	temp = a;  
+	a = b;
+	b = temp;
 }
 
 int main()

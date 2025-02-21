@@ -37,23 +37,20 @@ int main()
 try
 {
   safearray<int> sa1;
-  sa1[-1] = 44;
   for (int j = 1; j < LIMIT; j++)
     sa1[j] = j * 10;
+  
   for (int j = 1; j < LIMIT; j++) 
-  {
-    int temp = sa1[j]; 
-    cout << "Элемент " << j << " равен " << temp << endl; 
-  }
+    cout << "Элемент " << j << " равен " << sa1[j] << endl; 
+   sa1[-1] = 44; //можно менять индекс для проверки
+  
   safearray<float> sa2;
-  sa2[6] = 13.3;
   for (int j = 1; j < LIMIT; j++)
     sa2[j] = j * 11.1;
+  
   for (int j = 1; j < LIMIT; j++) 
-  { 
-    float temp = sa2[j]; 
-    cout << "Элемент " << j << " равен " << temp << endl; 
-  }
+    cout << "Элемент " << j << " равен " << sa2[j] << endl;
+  sa2[6] = 13.3; //можно менять индекс для проверки
 }
 catch (safearray<int>::Outofrange f) 
   { 

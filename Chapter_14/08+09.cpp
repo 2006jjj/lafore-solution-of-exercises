@@ -21,7 +21,7 @@ class Outofrange
 {
   public:
     int num;  
-    Outofrange(int n) :num(n) {} 
+    Outofrange(int n) : num(n) {} 
 };
 K& operator [] (int n)
 {

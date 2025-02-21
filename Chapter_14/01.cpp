@@ -20,7 +20,7 @@ int main()
 
 const unsigned int SZ = 5;
 int intA[SZ] = { 1,2,3,4,5 };
-cout << "\n\n\nAVERAGE INT ARRAY = " << average(intA, SZ) << endl;
+cout << "AVERAGE INT ARRAY = " << average(intA, SZ) << endl;
  
 double doubleA[SZ] = { 1.4, 2.3, 6.4, 6.2, 8.4 };
 cout << "AVERAGE DOUBLE ARRAY = " << average(doubleA, SZ) << endl;

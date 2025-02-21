@@ -49,7 +49,7 @@ Type pop()
 }
 };
 
-int main(int argc, char* argv[])
+int main()
 {setlocale(LC_ALL, ".1251"); system("color 0F"); srand(time(NULL));
 
 queue<int> q1;

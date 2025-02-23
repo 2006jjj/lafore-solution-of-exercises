@@ -34,8 +34,10 @@ names.push_back("Dmitry");
 names.push_back("Mihail");
 names.push_back("Vladimir");
 names.push_back("ddd");
+ 
 for (iter = names.begin(); iter < names.end(); iter++)
   cout << *iter << endl;
+ 
 cout << "\nВведите вашу строку:"; 
 getline(cin, str);
 iter = find_if(names.begin(), names.end(), bind2nd(equal_to<string>(), str));

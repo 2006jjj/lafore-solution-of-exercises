@@ -24,7 +24,7 @@ do
 
 sort(names.begin(), names.end());
 int size = names.size();
-for (int j = 0; j < names.size(); j++)
+for (int j = 0; j < size; j++)
   cout << names[j] << "\n"; 
 
 cout << endl; system("pause"); return 0;

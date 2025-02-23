@@ -17,9 +17,9 @@ int main()
 ifstream infile("E://TEST//ITER.txt");
  if (!infile)
    cerr << "Error";
- ofstream outfile("E://TEST//ITER1.txt");
+ofstream outfile("E://TEST//ITER1.txt");
  if (!outfile)
-   cerr << "Error";
+  cerr << "Error";
 
 istream_iterator<int> file_iter_in(infile);
 istream_iterator<int> end_of_stream;

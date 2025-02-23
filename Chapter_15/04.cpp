@@ -9,6 +9,7 @@
 #include <algorithm>
 #include <string>    
 #include <iomanip>
+#include <iterator>   
 using namespace std;
 
 
